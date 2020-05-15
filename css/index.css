@@ -147,7 +147,7 @@ header nav a:nth-of-type(2) {
   background-size: cover;
   height: 80vh;
   width: 90%;
-  margin: 0 auto;
+  margin: 4% auto;
   text-align: center;
 }
 .title-container div {
@@ -168,7 +168,35 @@ header nav a:nth-of-type(2) {
   padding: 1%;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 .title-container hr {
-  margin: 4%;
+  margin: 3% 0;
+}
+.artists-container {
+  width: 90%;
+  margin: 5.5% auto;
+  display: flex;
+  justify-content: space-around;
+}
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.artists-container .artist a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #424B59;
+  padding: 5%;
+}
+.artists-container .artist div {
+  font-size: 1.8rem;
+}
+.artists-container img {
+  width: 70%;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
 }
