@@ -8,10 +8,8 @@
     text-align: center;
 
     div{
-        display: flex;
-        flex-direction: column;
+        .displayCenterColumn();
         justify-content: center;
-        align-items: center;
         height: 100%;
         
 
@@ -44,15 +42,12 @@
     justify-content: space-around;
 
     .artist{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .displayCenterColumn();
         width: 45%;
 
         a{
+            .resetATag();
             font-size: 2.4rem;
-            text-decoration: none;
-            color: @greyMain;
             padding: 5%;
         }
 
