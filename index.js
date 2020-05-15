@@ -245,7 +245,7 @@ function removeArtist(artists, index) {
     artists.splice(index,1);
   }
 
-// removeArtist(artists,15);
+// removeArtist(artists,0);
 // console.log(artists);
 
   /**
@@ -262,7 +262,7 @@ function lotsOfArt(artists){
       productiveArtists.push(artists[i]);
     }
   }
-  
+
   return productiveArtists;
   }
 
@@ -278,11 +278,21 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+const artist = {
+  id: 21,
+  name: "Antonio Martinez Baez",
+  years: "1993 - 2020",
+  genre: "Web Design",
+  nationality: "Mexican",
+  bio: "Bacon ipsum dolor amet alcatra ham pastrami kielbasa salami chuck cupim landjaeger. Pork loin doner tongue, kielbasa capicola ground round shank ribeye brisket cow pancetta tenderloin flank frankfurter. Ground round jowl strip steak pork. Short loin brisket ham hock, leberkas cupim picanha tail burgdoggen. Ribeye picanha chicken capicola, hamburger t-bone biltong flank meatball alcatra salami beef."
+}
 
-    /* Code here */
-
+function addArtist(newArtist){
+  artists.push(newArtist)
+  return artists;
   }
+
+  console.log(addArtist(artist));
 
 
 
