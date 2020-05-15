@@ -328,12 +328,28 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(artists){
+    for(let i = 0; i < artists.length; i ++){
 
-    /* Code here */
+    console.log(
+      
+      `<div id="artist">
+      <div class="image">
+          <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+      </div>
+      <div class = "name">
+         <a href="${artists[i].wikipedia}">${artists[i].name}</a>
+      </div>
+      <div class = "bio">${artists[i].bio}</div>
+      </div>`
 
+    );
+     
+    }
   }
 
+  console.log(getHTML(artists));
+  
 
 /* STRETCH 3: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
