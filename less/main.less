@@ -7,6 +7,11 @@
     margin: 4% auto;
     text-align: center;
 
+    @media @mobil {
+        width: 100%;
+        height:40vh;  
+    }
+
     div{
         .displayCenterColumn();
         justify-content: center;
@@ -18,11 +23,18 @@
             color: white;
             margin-bottom: 1%;
             text-transform: capitalize;
+
+            @media @mobil {
+                font-size: 3rem;
+            }
         }
 
         button{
-            .btnContact(9%);
+            .btnContact(9%, 1.8rem);
             
+            @media @mobil {
+                .btnContact(20%, 1.2rem);
+            }
             
         }
     }
@@ -39,18 +51,36 @@
     display: flex;
     justify-content: space-around;
 
+    @media @mobil {
+        flex-direction: column;   
+    }
+
     .artist{
         .displayCenterColumn();
         width: 45%;
 
+        @media @mobil {
+            width: 80%;
+            margin: 5% auto; 
+        }
+
         a{
             .resetATag();
+            cursor: pointer;
             font-size: 2.4rem;
             padding: 5%;
+
+            @media @mobil {
+                font-size: 1.8rem; 
+            }
         }
 
         div{
             font-size: 1.8rem;
+
+            @media @mobil {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -59,5 +89,10 @@
         height: 350px;
         border-radius: 8px;
         object-fit: cover;
+
+        @media @mobil {
+            height: 200px; 
+        }
+        
     }
 }

@@ -8,10 +8,14 @@
 .resetATag(){
     color: @greyMain;
     text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
-.btnContact(@width){
-    font-size: 1.8rem;
+.btnContact(@width, @fontSize){
+    font-size: @fontSize;
     width: @width;
     padding: 1%;
     border-radius: 5px;
